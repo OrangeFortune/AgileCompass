@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Form</title>
+</head>
+<body>
+
+    <h1>ChatGPT in VS Code</h1>
+
+    <h2>Enter Carry-Over Losses from Previous Years</h2>
+    <form action="/submit-losses" method="post">
+        <label for="carryOverLosses">Carry-Over Losses from Previous Years (whole dollars only):</label>
+        <br>
+        <input type="number" id="carryOverLosses" name="carryOverLosses" min="0" step="1" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Upload a File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file to upload:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        <input type="submit" value="Upload File">
+    </form>
+
+    <h2>Select a Financial Year</h2>
+    <form action="/submit-year" method="post">
+        <label>
+            <input type="radio" name="financialYear" value="FY20"> FY20
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="financialYear" value="FY21"> FY21
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="financialYear" value="FY22"> FY22
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="financialYear" value="FY23"> FY23
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="financialYear" value="FY24"> FY24
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="financialYear" value="FY25"> FY25
+        </label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
