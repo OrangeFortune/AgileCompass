@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload Form</title>
+    <title>CGT Tracker</title>
+
+    <title>Financial Variables Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+        }
+        .indent {
+            padding-left: 20px;
+            font-style: italic;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -54,6 +81,46 @@
         <br><br>
         <input type="submit" value="Submit">
     </form>
+
+    <h2>Financial Variables</h2>
+    <table>
+        <tr>
+            <th>Variable Name</th>
+            <th>Amount ($)</th>
+        </tr>
+        <tr>
+            <td>Capital Proceeds</td>
+            <td>$0</td>
+        </tr>
+        <tr class="indent">
+            <td>less Cost Base</td>
+            <td>$0</td>
+        </tr>
+        <tr>
+            <td>Capital Gain</td>
+            <td>$0</td>
+        </tr>
+        <tr class="indent">
+            <td>less Capital Loss</td>
+            <td>$0</td>
+        </tr>
+        <tr class="highlight">
+            <td>18-H Total Capital Gain</td>
+            <td>$0</td>
+        </tr>
+        <tr class="indent">
+            <td>less CGT Discount</td>
+            <td>$0</td>
+        </tr>
+        <tr class="highlight">
+            <td>18-A Net Capital Gain</td>
+            <td>$0</td>
+        </tr>
+        <tr class="highlight">
+            <td>18-V Carry-Forward Losses</td>
+            <td>$0</td>
+        </tr>
+    </table>
 
 </body>
 </html>
